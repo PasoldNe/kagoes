@@ -3,6 +3,7 @@ package com.pasold.kombi.dtos;
 public class RetornoAbastecimentoDto {
     private String modelo;
     private Double quilometragem;
+    private String combustivel;
     private Double litrosAbastecidos;
     private Double valorPago;
     private Double kmPorLitro;
@@ -57,5 +58,13 @@ public class RetornoAbastecimentoDto {
 
     public void setCustoPorKm(Double custoPorKm) {
         this.custoPorKm = custoPorKm;
+    }
+
+    public String getCombustivel() {
+        return combustivel;
+    }
+
+    public void setCombustivel(String combustivel) {
+        this.combustivel = combustivel;
     }
 }

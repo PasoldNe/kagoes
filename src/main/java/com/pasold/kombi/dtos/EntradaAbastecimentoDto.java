@@ -3,6 +3,7 @@ package com.pasold.kombi.dtos;
 public class EntradaAbastecimentoDto {
     private String modelo;
     private Double quilometragem;
+    private String combustivel;
     private Double litrosAbastecidos;
     private Double valorPago;
 
@@ -41,5 +42,13 @@ public class EntradaAbastecimentoDto {
 
     public void setValorPago(Double valorPago) {
         this.valorPago = valorPago;
+    }
+
+    public String getCombustivel() {
+        return combustivel;
+    }
+
+    public void setCombustivel(String combustivel) {
+        this.combustivel = combustivel;
     }
 }
