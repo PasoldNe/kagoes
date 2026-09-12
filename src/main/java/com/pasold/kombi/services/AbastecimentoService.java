@@ -26,6 +26,6 @@ public class AbastecimentoService {
     }
 
     private Double custoPorKm(EntradaAbastecimentoDto entrada){
-        return kmPorLitro(entrada)*6.56D;
+        return Math.round(entrada.getValorPago()/entrada.getLitrosAbastecidos())/kmPorLitro(entrada);
     }
 }
